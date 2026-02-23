@@ -183,59 +183,106 @@ BUILTIN_THEMES: dict[str, dict] = {
     """,
   ),
 
-  "Aero Glass": _t(
-    win_bg="qlineargradient(x1:0,y1:0,x2:0.3,y2:1,"
-           "stop:0 #0a1628, stop:0.4 #0d2350, stop:0.7 #0a1a3e, stop:1 #060e20)",
-    bg="transparent", surface="rgba(80,130,255,0.10)", fg="#d8eaff",
-    border="rgba(160,200,255,0.35)", hover="rgba(100,160,255,0.18)",
-    selection="rgba(74,158,255,0.40)",
-    accent="#4a9eff", accent_fg="#ffffff", accent_hover="#2a7de0",
-    btn="rgba(70,120,230,0.20)", btn_fg="#d8eaff",
-    btn_border="1px solid rgba(150,200,255,0.35)",
-    btn_hover="rgba(100,160,255,0.32)", btn_press="rgba(40,90,180,0.30)",
-    tab_bg="rgba(50,100,200,0.15)", tab_fg="rgba(200,225,255,0.70)",
-    tab_sel="rgba(74,158,255,0.30)", tab_sel_fg="#ffffff",
-    prog_bg="rgba(80,120,200,0.25)", glow="#4a9eff",
+  "Win7 Nostalgia": _t(
+    win_bg="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+           "stop:0 #d6eeff, stop:0.18 #a8d8f8, stop:0.45 #6ab8f0,"
+           "stop:0.46 #4aa8e8, stop:0.72 #82c8f5, stop:1 #c0e8ff)",
+    bg="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+       "stop:0 #e8f4ff, stop:0.5 #c2dff5, stop:1 #daeeff)",
+    surface="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+            "stop:0 rgba(255,255,255,0.82), stop:0.48 rgba(210,235,255,0.70),"
+            "stop:0.49 rgba(180,218,248,0.75), stop:1 rgba(220,240,255,0.78))",
+    fg="#0a2a4a", border="rgba(100,170,230,0.55)",
+    hover="rgba(180,220,255,0.55)", selection="rgba(90,160,230,0.35)",
+    accent="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+           "stop:0 #7ad4ff, stop:0.45 #28a8f0, stop:0.46 #1090e0, stop:1 #60c8ff)",
+    accent_fg="#ffffff", accent_hover="#1a90d8",
+    btn="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+        "stop:0 rgba(255,255,255,0.90), stop:0.48 rgba(200,230,255,0.80),"
+        "stop:0.49 rgba(160,210,248,0.85), stop:1 rgba(210,235,255,0.88))",
+    btn_fg="#0a2a4a", btn_border="1px solid rgba(100,170,230,0.60)",
+    btn_hover="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+              "stop:0 rgba(255,255,255,0.98), stop:0.48 rgba(220,240,255,0.90),"
+              "stop:0.49 rgba(180,222,252,0.92), stop:1 rgba(225,242,255,0.95))",
+    btn_press="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+              "stop:0 rgba(160,210,248,0.90), stop:1 rgba(200,232,255,0.85))",
+    tab_bg="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+           "stop:0 rgba(255,255,255,0.65), stop:1 rgba(190,225,255,0.55))",
+    tab_fg="#3a6080",
+    tab_sel="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
+            "stop:0 rgba(255,255,255,0.95), stop:0.48 rgba(225,242,255,0.90),"
+            "stop:0.49 rgba(185,222,252,0.92), stop:1 rgba(230,245,255,0.95))",
+    tab_sel_fg="#0a2a4a",
+    prog_bg="rgba(160,210,240,0.40)", glow="#28a8f0",
     extra="""
     QFrame#panel, QFrame#lpanel {
-        background: rgba(60,110,220,0.12);
-        border: 1px solid rgba(160,200,255,0.30);
+        background: qlineargradient(x1:0,y1:0,x2:0,y2:1,
+            stop:0 rgba(255,255,255,0.78), stop:0.5 rgba(205,232,252,0.72),
+            stop:1 rgba(220,240,255,0.75));
+        border: 1px solid rgba(120,180,230,0.55);
     }
-    QLineEdit { background: rgba(60,110,240,0.15); }
-    QListWidget { background: rgba(50,100,200,0.12);
-                  border-right: 1px solid rgba(150,200,255,0.30); }
-    QComboBox { background: rgba(60,110,240,0.15); }
-    QTextEdit { background: rgba(60,110,240,0.15); }
+    QLineEdit {
+        background: qlineargradient(x1:0,y1:0,x2:0,y2:1,
+            stop:0 rgba(255,255,255,0.88), stop:1 rgba(215,238,255,0.80));
+        border: 1.5px solid rgba(100,170,230,0.60);
+    }
+    QListWidget {
+        background: rgba(230,244,255,0.60);
+        border-right: 1px solid rgba(120,180,230,0.50);
+    }
+    QComboBox {
+        background: qlineargradient(x1:0,y1:0,x2:0,y2:1,
+            stop:0 rgba(255,255,255,0.88), stop:1 rgba(215,238,255,0.80));
+    }
+    QProgressBar::chunk {
+        background: qlineargradient(x1:0,y1:0,x2:1,y2:0,
+            stop:0 #7ad4ff, stop:0.5 #28a8f0, stop:1 #60c8ff);
+    }
+    QTabBar::tab:selected { border-bottom: 2px solid #28a8f0; }
     """,
   ),
 
   "Liquid Glass": _t(
     win_bg="qlineargradient(x1:0,y1:0,x2:1,y2:1,"
-           "stop:0 #071c1a, stop:0.35 #0a2e2a, stop:0.7 #062420, stop:1 #030d0c)",
-    bg="transparent", surface="rgba(0,200,170,0.10)", fg="#c0f0e8",
-    border="rgba(0,230,195,0.32)", hover="rgba(0,200,170,0.18)",
-    selection="rgba(0,220,185,0.38)",
-    accent="#00e5cc", accent_fg="#002a26", accent_hover="#00c4ae",
-    btn="rgba(0,180,155,0.18)", btn_fg="#c0f0e8",
-    btn_border="1px solid rgba(0,230,195,0.32)",
-    btn_hover="rgba(0,210,180,0.28)", btn_press="rgba(0,140,120,0.25)",
-    tab_bg="rgba(0,160,135,0.13)", tab_fg="rgba(180,240,230,0.65)",
-    tab_sel="rgba(0,220,185,0.26)", tab_sel_fg="#c0f0e8",
-    prog_bg="rgba(0,160,135,0.25)", glow="#00e5cc",
+           "stop:0 #0a0a0a, stop:0.5 #111118, stop:1 #080810)",
+    bg="transparent", surface="rgba(255,255,255,0.04)", fg="rgba(255,255,255,0.88)",
+    border="rgba(255,255,255,0.10)", hover="rgba(255,255,255,0.07)",
+    selection="rgba(255,255,255,0.14)",
+    accent="rgba(255,255,255,0.85)", accent_fg="#000000",
+    accent_hover="rgba(255,255,255,0.95)",
+    btn="rgba(255,255,255,0.06)", btn_fg="rgba(255,255,255,0.85)",
+    btn_border="1px solid rgba(255,255,255,0.10)",
+    btn_hover="rgba(255,255,255,0.11)", btn_press="rgba(255,255,255,0.03)",
+    tab_bg="rgba(255,255,255,0.04)", tab_fg="rgba(255,255,255,0.35)",
+    tab_sel="rgba(255,255,255,0.09)", tab_sel_fg="rgba(255,255,255,0.90)",
+    prog_bg="rgba(255,255,255,0.06)", glow="rgba(255,255,255,0.6)",
     extra="""
     QFrame#panel, QFrame#lpanel {
-        background: rgba(0,180,155,0.11);
-        border: 1px solid rgba(0,230,195,0.28);
+        background: rgba(255,255,255,0.04);
+        border: 1px solid rgba(255,255,255,0.08);
     }
-    QLineEdit { background: rgba(0,180,155,0.14); }
-    QListWidget { background: rgba(0,160,135,0.11);
-                  border-right: 1px solid rgba(0,230,195,0.28); }
-    QComboBox  { background: rgba(0,180,155,0.14); }
-    QTextEdit  { background: rgba(0,180,155,0.14); }
+    QLineEdit {
+        background: rgba(255,255,255,0.05);
+        border: 1.5px solid rgba(255,255,255,0.10);
+    }
+    QListWidget {
+        background: transparent;
+        border-right: 1px solid rgba(255,255,255,0.08);
+    }
+    QComboBox  { background: rgba(255,255,255,0.05); }
+    QTextEdit  { background: rgba(255,255,255,0.05); }
+    QTabBar::tab:selected { border-bottom: 1px solid rgba(255,255,255,0.30); }
+    QProgressBar::chunk { background: rgba(255,255,255,0.70); }
+    QPushButton#accent {
+        background: rgba(255,255,255,0.85);
+        color: #000;
+        border: none;
+    }
+    QPushButton#accent:hover { background: rgba(255,255,255,0.95); }
     """,
   ),
 
-  "Liquid Metal": _t(
+  "Molten Chrome": _t(
     win_bg="qlineargradient(x1:0,y1:0,x2:0,y2:1,"
            "stop:0 #1e1e1e, stop:0.5 #141414, stop:1 #1a1a1a)",
     bg="#141414", surface="qlineargradient(x1:0,y1:0,x2:0,y2:1,"

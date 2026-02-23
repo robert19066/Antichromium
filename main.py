@@ -7,7 +7,7 @@ from PyQt6.QtWebEngineWidgets import QWebEngineView
 from PyQt6.QtWebEngineCore import QWebEngineSettings, QWebEnginePage
 from PyQt6.QtCore import QUrl, QPropertyAnimation, QEasingCurve, QAbstractAnimation, QTimer
 from PyQt6.QtGui import QFont, QKeySequence, QShortcut, QColor
-
+from PyQt6.QtGui import QIcon
 from themes import (
     BUILTIN_THEMES, build_stylesheet, generate_random_theme,
     load_theme, list_user_themes, INJECT_DARK, REMOVE_DARK, SMOOTH_JS
@@ -25,11 +25,11 @@ ENGINES = {
     "Yahoo":     "https://search.yahoo.com/search?p={}",
 }
 
-
 class CustomBrowser(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Antichromium")
+        self.setWindowIcon(QIcon("icon.png"))
         self.resize(1340, 860)
         self._dark_web  = False
         self._zoom      = 1.0
