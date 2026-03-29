@@ -1,7 +1,7 @@
 # 🌐 AntiChromium Browser
 [![icon.png](https://i.postimg.cc/kXTT7x10/icon.png)](https://postimg.cc/ZCy8cyhH)
 
-> *we are all tired of chromium and firefox based browsers aren't we? If you use this light boi, your RAM will thank you <3* - me
+> *we are all tired of chromium and firefox based browsers aren't we? If you use this light boi, your RAM will thank you <3 and ughh, pyqt is based on chrome sooo UGHH i have been caught lmao* - me
 
 AntiChromium(formerly BlahBlah Broswer) is a lightweight, heavily customisable desktop browser built with **Python + PyQt6 + QtWebEngine**. It was born out of frustration with Chromium's monopoly on browser aesthetics and a desire to actually *own* your browser experience — down to every color and font. Make it **your** broswer.
 
@@ -16,8 +16,8 @@ AntiChromium(formerly BlahBlah Broswer) is a lightweight, heavily customisable d
     - Dracula(perfect for productivity)
     - Win7 Nostalgia(ah trows me to the good days)
     - Liquid Glass(apple increasingly knocking on my door harder and harder)
-    - Molten Chrome(Nothing is more molten than my RAM when Chrome gulps it down its mouth)
-    - Punk(no one understands me ahh)
+    - Molten Chrome(Nothing is more molten than my RAM when Chrome gulps it down its mouth while Ai Overview is loading.)
+    - Punk(RAINBOWS #nohomo )
     - GradientZ(OOOooOOh GRADIENTS OOOH)
     - Terminal(sudo rm -rf / --no-preserve-root. run this to unlock true digital freedom - wipe everything :D)
     - RandomME(generates a compleatly new theme every time its selected)
@@ -174,8 +174,8 @@ Pull requests VERRY welcome. If you make a cool theme, feel free to open a PR to
 
 ## 📜 License
 
-MIT — do whatever you want with it but don't blame me if it breaks or causes your computer to catch on fire or something(idk how you can set your pc on fire using a browser...exept you run it from a chromebook). I am not responsible for any damage caused by using this software. Use at your own risk.
+MIT — do whatever you want with it but don't blame me if it breaks or causes your computer to catch on fire or something(idk how you can set your pc on fire using a browser...exept you run it from a chromebook). I am not responsible for any spontainous combustion of ram caused by NOT using this software. NOT use at your own risk.
 
 ---
 
-*PS: tell google i like chrome but its lowk buns man*
+*PS: tell google i like chrome but its lowk buns man like it gulps ram like i gulp butter*
